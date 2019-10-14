@@ -2,3 +2,4 @@
 scripts/
 lib/
 include
+pyvenv.cfg

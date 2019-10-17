@@ -13,13 +13,21 @@
         #print ("try something bigger")
 
 
-millas = 0.62
 
+
+
+print ("heLLo, here you can convert km into miles,")
 
 while True:
 
-    km = int(input("put your km"))
-    print = float(km * millas)
+    km = input("please type your km: ")
+    km = float(km.replace(",", ".")) #lo he tenido que mirar#
+    miles = km * 0.62
+    print("your equivalence in miles is:  " + miles)
+
+
+
+
 
 
 

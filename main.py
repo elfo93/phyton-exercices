@@ -16,20 +16,20 @@
 
 
 
-#print ("heLLo, here you can convert km into miles,")
+print ("heLLo, here you can convert km into miles,")
 
-#while True:
+while True:
 
-    #km = input("please type your km: ")
-    #km = float(km.replace(",", ".")) #lo he tenido que mirar#
-    #miles = km * 0.62
-    #print("your equivalence in miles is:  " + miles)
+    km = input("please type your km: ")
+    miles= (0.62*km)
+    print(str(miles))
 
 
 
 proof = input("hello, put your name in capital letter:")
 print ("magicaly its will be turned in lower :)")
 print (str.lower (proof))
+
 
 
 

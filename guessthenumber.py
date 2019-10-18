@@ -7,7 +7,7 @@ attempts = 0
 with open("score_list.txt","r") as score_file:
     a = score_file.read() #siempre es string cuando se lee a menos que se le pase una funcion
     score_list = json.loads(a) #transformamos en lista
-    score_list.sort()
+    score_list.sort() #copiamos la lista
     print("top scores:" + str(score_list))
 
 while True:

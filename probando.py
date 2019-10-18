@@ -42,6 +42,12 @@ for item in another_list:
 mixed_list = [22, "elon", True, "SmartNinja", 3.14]
 print(mixed_list)
 
+
+
+
+
+
+
 for item in mixed_list:
     print(item)
 
@@ -51,4 +57,5 @@ for i in ["h","o","l","a"]:
 some_list = [12, 15, 27, 10, 50]
 some_list.sort()
 print(some_list)
+
 

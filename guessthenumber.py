@@ -4,6 +4,11 @@ import datetime #libreria de tiempo
 
 secret = random.randint(1, 30)
 attempts = 0
+mistakes = []
+
+print("hello")
+user_name=(input("type your name"))
+print("hello" + user_name)
 
 
 with open("score_list.txt","r") as score_file:
@@ -21,18 +26,22 @@ while True:
         print("Attempts needed: " + str(attempts))
 
         current_time = str(datetime.datetime.now())  # nos devuelve el dato en formato datetime
-        score_data = {"attempts": attempts, "date": current_time}
+        score_data = {"name": user_name, "secretnumber": secret, "attempts": attempts, "date": current_time, "mistakes": mistakes}
         #score_list.append(attempts) #append es para añadir un elemento mas a la lista (el nº de intentos)
         print(current_time)
+        print(user_name)
+        print(secret)
         score_list.append(score_data)
 
         with open("score_list.txt","w") as score_file: #abrimos la lista en modo escritura
-            #b = json.dumps(score_list) #pasamos la lista a string
-            b = json.dumps(score_list)
+            b = json.dumps(score_list) #pasamos la lista a string
             score_file.write(b)
         break
 
     elif guess > secret:
         print("Your guess is not correct... try something smaller")
+        mistakes.append(guess)
     elif guess < secret:
         print("Your guess is not correct... try something bigger")
+        mistakes.append(guess)
+

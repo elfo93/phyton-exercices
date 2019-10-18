@@ -16,8 +16,3 @@ for num in range(1, answer+1):
         print(num)
 
 
-
-
-
-
-

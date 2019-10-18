@@ -23,7 +23,9 @@ while True:
     km = input("please type your km: ")
     km = float
     miles= (0.62*km)
-    print(str(miles))
+    print(s
+
+    tr(miles))
 
 
 

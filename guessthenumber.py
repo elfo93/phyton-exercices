@@ -14,11 +14,13 @@ print("hello" + user_name)
 with open("score_list.txt","r") as score_file:
     a = score_file.read() #siempre es string cuando se lee a menos que se le pase una funcion
     score_list = json.loads(a) #transformamos en lista
-    score_list.sort() #ordenar la lista
-    print("top scores:" + str(score_list[3:]))
+    score_list.sort()  #ordenar la lista
+    print("top scores:"+ str(score_list[3:]))
 
 while True:
-    guess = int(input("Guess the secret number (between 1 and 30): "))
+    guess = int(input("Guess the secret number (between 1"
+                      ""
+                      " and 30): "))
     attempts += 1
 
     if guess == secret:

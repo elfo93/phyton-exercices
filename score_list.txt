@@ -1,1 +1,1 @@
-[{"name": " elvira", "secretnumber": 20, "attempts": 1, "date": "2019-10-18 20:24:27.086451", "mistakes": []}, {"name": " elvira 2", "secretnumber": 1, "attempts": 4, "date": "2019-10-18 20:24:55.520757", "mistakes": [10, 5, 2]}]
+[{"name": " esther", "secretnumber": 10, "attempts": 2, "date": "2019-10-22 12:33:14.306010", "mistakes": [14]}]
